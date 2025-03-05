@@ -1,7 +1,7 @@
-// app/blog/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 type Post = {
   slug: string;
@@ -34,7 +34,7 @@ const posts: Post[] = [
       </p>
       <p>Stay tuned for the next development phase as we refine Maibel.ai based on user feedback!</p>
     `,
-    imageUrl: "/blog/sample.jpg",
+    imageUrl: "/img_404.jpg",
   },
   {
     slug: "roadshow-testing",
@@ -68,6 +68,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
+    <div>
     <article className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <Link href="/blog">
         <span className="text-pink-500 hover:underline">&larr; Back to Blog</span>
@@ -93,5 +94,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         className="prose max-w-none text-gray-800"
       />
     </article>
+    <Footer />
+    </div>
   );
 }

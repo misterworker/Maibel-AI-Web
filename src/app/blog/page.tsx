@@ -1,5 +1,6 @@
 import BlogCard from "../components/BlogCard";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 type Post = {
   slug: string;
@@ -15,7 +16,7 @@ const posts: Post[] = [
     title: "Focus Group Discussion",
     date: "26th Jan 2025",
     excerpt: "A deeper dive into AI-powered wellness...",
-    imageUrl: "/blog/roadshow_banner.jpg",
+    imageUrl: "/img_404.jpg",
   },
   {
     slug: "roadshow-testing",
@@ -41,6 +42,7 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

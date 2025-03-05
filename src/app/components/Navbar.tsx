@@ -1,7 +1,14 @@
-// components/Navbar.tsx
+'use client'
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
+  // Function to check if the current path is active
+  const isActive = (path: string) => pathname === path ? 'border-b-2 border-pink-500' : '';
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,13 +22,13 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="text-gray-600 hover:text-pink-500">
+            <Link href="/" className={`text-gray-600 hover:text-pink-500 ${isActive('/')}`}>
               About
             </Link>
-            <Link href="mailto:test@gmail.com" className="text-gray-600 hover:text-pink-500">
+            <Link href="/contact" className={`text-gray-600 hover:text-pink-500 ${isActive('/contact')}`}>
               Contact
             </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-pink-500">
+            <Link href="/blog" className={`text-gray-600 hover:text-pink-500 ${isActive('/blog')}`}>
               Blog
             </Link>
           </div>

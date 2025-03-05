@@ -3,6 +3,7 @@
 import Navbar from "./components/Navbar";
 import FeatureCard from "./components/FeatureCard";
 import { useEffect, useRef } from "react";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const aiCoachVideoRef = useRef<HTMLVideoElement | null>(null);
@@ -144,10 +145,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center py-6 text-gray-600">
-        © 2025 Maibel.ai | <a href="mailto:theteammaibel@gmail.com" className="text-pink-500">Contact Us</a>
-      </footer>
+      <Footer />
     </div>
   );
 }
