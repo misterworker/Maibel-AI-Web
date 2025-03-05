@@ -70,6 +70,7 @@ export default function SignupPage() {
         ? [...goal.filter((g) => g !== 'Other'), otherGoal].join(', ')
         : goal.join(', '),
       level,
+      recaptchaResponse
     };
 
     // Merge survey data from local storage with signup data
@@ -165,12 +166,12 @@ export default function SignupPage() {
                 <option value="" disabled>
                   Age
                 </option>
-                <option value="<=17">17 and below</option>
-                <option value="18-24">18-24</option>
-                <option value="25-34">25-34</option>
-                <option value="35-44">35-44</option>
-                <option value="45-54">45-54</option>
-                <option value=">=55">55 and above</option>
+                <option value="<=17" className="text-black">17 and below</option>
+                <option value="18-24" className="text-black">18-24</option>
+                <option value="25-34" className="text-black">25-34</option>
+                <option value="35-44" className="text-black">35-44</option>
+                <option value="45-54" className="text-black">45-54</option>
+                <option value=">=55" className="text-black">55 and above</option>
               </select>
             </div>
 
@@ -242,9 +243,9 @@ export default function SignupPage() {
                 <option value="" disabled>
                   Fitness Levels
                 </option>
-                <option value="newbie">Newbie</option>
-                <option value="casual">Casual</option>
-                <option value="regular">Regular</option>
+                <option value="newbie" className="text-black">Newbie</option>
+                <option value="casual" className="text-black">Casual</option>
+                <option value="regular" className="text-black">Regular</option>
               </select>
             </div>
 
