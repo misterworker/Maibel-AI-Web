@@ -28,7 +28,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div>
-            <a href="https://www.maibel-ai.com/refer" className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+            <a href="/refer" className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
               Get Started
             </a>
           </div>

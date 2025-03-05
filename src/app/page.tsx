@@ -10,10 +10,10 @@ export default function Home() {
 
   useEffect(() => {
     if (aiCoachVideoRef.current) {
-      aiCoachVideoRef.current.playbackRate = 1.25; // ✅ Speed up AI coach video
+      aiCoachVideoRef.current.playbackRate = 1.25; // Speed up AI coach video
     }
     if (storyModeVideoRef.current) {
-      storyModeVideoRef.current.playbackRate = 1.25; // ✅ Speed up story mode video
+      storyModeVideoRef.current.playbackRate = 1.25; // Speed up story mode video
     }
   }, []);
 
@@ -32,7 +32,7 @@ export default function Home() {
           <strong> real-life rewards</strong>—built <strong> by women, for women</strong>.
         </p>
         <a
-          href="https://www.maibel-ai.com/"
+          href="/refer"
           className="mt-6 inline-block bg-pink-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 shadow-md"
         >
           Join the Waitlist - Be the First to Try
@@ -137,7 +137,7 @@ export default function Home() {
           Be the first to experience Maibel.ai and start your journey.
         </p>
         <a
-          href="https://www.maibel-ai.com/"
+          href="/refer"
           className="mt-6 inline-block bg-pink-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 shadow-md"
         >
           Join the Waitlist Now
@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center py-6 text-gray-600">
-        © 2025 Maibel.ai | <a href="mailto:test@gmail.com" className="text-pink-500">Contact Us</a>
+        © 2025 Maibel.ai | <a href="mailto:theteammaibel@gmail.com" className="text-pink-500">Contact Us</a>
       </footer>
     </div>
   );
