@@ -69,10 +69,10 @@ export default function Home() {
           {/* Video Grid with Virtual Phone */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             {/* AI Coach Video */}
-            <div className="relative w-44 md:w-64 aspect-[9/16] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
+            <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
               <video
                 ref={aiCoachVideoRef}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover translate-y-[5px]"
                 controls
                 loop
                 autoPlay
@@ -86,10 +86,10 @@ export default function Home() {
             </div>
 
             {/* Story Mode Video */}
-            <div className="relative w-44 md:w-64 aspect-[9/16] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
+            <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
               <video
                 ref={storyModeVideoRef}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover translate-y-[5px]"
                 controls
                 loop
                 autoPlay
