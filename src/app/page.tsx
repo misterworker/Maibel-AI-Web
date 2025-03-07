@@ -11,10 +11,10 @@ export default function Home() {
 
   useEffect(() => {
     if (aiCoachVideoRef.current) {
-      aiCoachVideoRef.current.playbackRate = 1.25; // Speed up AI coach video
+      aiCoachVideoRef.current.playbackRate = 1.25;
     }
     if (storyModeVideoRef.current) {
-      storyModeVideoRef.current.playbackRate = 1.25; // Speed up story mode video
+      storyModeVideoRef.current.playbackRate = 1.25;
     }
   }, []);
 
@@ -108,8 +108,8 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 bg-[#f6f2ea]">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#382a40]">Why Women Love Maibel.ai</h2>
-          <p className="text-[#512260] mt-2">
+          <h2 className="text-3xl font-bold text-[#382a40] px-6 sm:px-10">Why Women Love Maibel.ai</h2>
+          <p className="text-[#512260] mt-2 px-6 sm:px-10">
             Built for real women - supporting habit-building, motivation, and fun.
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center py-16 bg-[#c5aded]">
+      <section className="text-center py-16 bg-[#c5aded] px-6 sm:px-10">
         <h2 className="text-3xl font-bold text-[#382a40]">Be Part of the Wellness Revolution</h2>
         <p className="mt-4 text-[#512260] text-lg max-w-2xl mx-auto">
           We're on a mission to help women build <strong>lasting habits</strong> with motivation that actually works.
