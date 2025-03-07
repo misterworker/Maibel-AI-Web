@@ -19,49 +19,52 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="font-serif">
       <Navbar />
 
       {/* Hero Section */}
-      <header className="bg-pink-100 text-center py-20 px-6">
-        <h1 className="text-5xl font-bold text-pink-600 leading-tight">
+      <header className="bg-[#f6f2ea] text-center py-20 px-6">
+        <h1 className="text-5xl font-bold text-[#512260] leading-tight">
           The Future of Women's Wellness Starts Here.
         </h1>
-        <p className="mt-4 text-gray-700 text-lg max-w-3xl mx-auto">
-          74% of users abandon wellness apps within 10 uses. Maibel.ai is changing the game with 
+        <p className="mt-4 text-[#382a40] text-lg max-w-3xl mx-auto">
+          Sick of confusing fitness apps? Maibel.ai is changing the game with 
           <strong> AI-powered coaching</strong>, <strong> engaging storytelling</strong>, and 
-          <strong> real-life rewards</strong>—built <strong> by women, for women</strong>.
+          <strong> real-life rewards</strong> - built <strong> by women, for women</strong>.
         </p>
         <a
           href="/refer"
-          className="mt-6 inline-block bg-pink-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 shadow-md"
+          className="mt-6 inline-block bg-[#512260] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#382a40] shadow-md"
         >
-          Join the Waitlist - Be the First to Try
+          Join the Waitlist
         </a>
       </header>
 
       {/* Social Proof / Problem Statement */}
       <section className="bg-white py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800">
+        <h2 className="text-3xl font-bold text-[#382a40]">
           “I've tried a thousand wellness apps… but nothing sticks.”
         </h2>
-        <p className="text-gray-600 mt-2 max-w-3xl mx-auto">
+        <p className="text-[#512260] mt-2 max-w-3xl mx-auto">
           Women make up <strong>60% of all fitness app users</strong>, yet most apps are 
           <strong> built by men</strong>, lacking the <strong>personalization, motivation, and support</strong> that women need.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-6">
-          <div className="bg-pink-200 text-pink-800 font-semibold px-4 py-2 rounded-lg shadow-md">
-            85% of surveyed users want to try Maibel.ai
+          <div className="bg-[#c5aded] text-[#382a40] font-semibold px-4 py-2 rounded-lg shadow-md">
+            85% of surveyees want to try Maibel.ai
           </div>
-          <div className="bg-pink-200 text-pink-800 font-semibold px-4 py-2 rounded-lg shadow-md">
+          <div className="bg-[#c5aded] text-[#382a40] font-semibold px-4 py-2 rounded-lg shadow-md">
             140+ women on our waitlist
+          </div>
+          <div className="bg-[#c5aded] text-[#382a40] font-semibold px-4 py-2 rounded-lg shadow-md">
+            74% of users abandon wellness apps within 10 uses
           </div>
         </div>
 
         {/* Video Showcase */}
         <div className="mt-10 max-w-5xl mx-auto">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">See Maibel.ai in Action</h3>
+          <h3 className="text-2xl font-bold text-[#382a40] mb-4">See Maibel.ai in Action</h3>
 
           {/* Video Grid with Virtual Phone */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -103,11 +106,11 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-gray-50">
+      <section id="features" className="py-20 bg-[#f6f2ea]">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800">Why Women Love Maibel.ai</h2>
-          <p className="text-gray-600 mt-2">
-            Built for real women—supporting habit-building, motivation, and fun.
+          <h2 className="text-3xl font-bold text-[#382a40]">Why Women Love Maibel.ai</h2>
+          <p className="text-[#512260] mt-2">
+            Built for real women - supporting habit-building, motivation, and fun.
           </p>
         </div>
 
@@ -131,15 +134,15 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center py-16 bg-pink-100">
-        <h2 className="text-3xl font-bold text-pink-600">Be Part of the Wellness Revolution</h2>
-        <p className="mt-4 text-gray-700 text-lg max-w-2xl mx-auto">
+      <section className="text-center py-16 bg-[#c5aded]">
+        <h2 className="text-3xl font-bold text-[#382a40]">Be Part of the Wellness Revolution</h2>
+        <p className="mt-4 text-[#512260] text-lg max-w-2xl mx-auto">
           We're on a mission to help women build <strong>lasting habits</strong> with motivation that actually works.
           Be the first to experience Maibel.ai and start your journey.
         </p>
         <a
           href="/refer"
-          className="mt-6 inline-block bg-pink-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-pink-600 shadow-md"
+          className="mt-6 inline-block bg-[#512260] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#382a40] shadow-md"
         >
           Join the Waitlist Now
         </a>
