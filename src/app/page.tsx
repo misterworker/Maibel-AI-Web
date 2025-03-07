@@ -28,8 +28,8 @@ export default function Home() {
           The Future of Women's Wellness Starts Here.
         </h1>
         <p className="mt-4 text-[#382a40] text-lg max-w-3xl mx-auto">
-          Sick of confusing fitness apps? Maibel.ai is changing the game with 
-          <strong> AI-powered coaching</strong>, <strong> engaging storytelling</strong>, and 
+          Sick of confusing fitness apps? Maibel.ai is changing the game with
+          <strong> AI-powered coaching</strong>, <strong> engaging storytelling</strong>, and
           <strong> real-life rewards</strong> - built <strong> by women, for women</strong>.
         </p>
         <a
@@ -46,7 +46,7 @@ export default function Home() {
           “I've tried a thousand wellness apps… but nothing sticks.”
         </h2>
         <p className="text-[#512260] mt-2 max-w-3xl mx-auto">
-          Women make up <strong>60% of all fitness app users</strong>, yet most apps are 
+          Women make up <strong>60% of all fitness app users</strong>, yet most apps are
           <strong> built by men</strong>, lacking the <strong>personalization, motivation, and support</strong> that women need.
         </p>
 
@@ -61,49 +61,59 @@ export default function Home() {
             74% of users abandon wellness apps within 10 uses
           </div>
         </div>
+      </section>
 
-        {/* Video Showcase */}
-        <div className="mt-10 max-w-5xl mx-auto">
-          <h3 className="text-2xl font-bold text-[#382a40] mb-4">See Maibel.ai in Action</h3>
+      {/* Video Showcase */}
+      <div 
+        className="max-w-5xl mx-auto"
+        style={{
+          backgroundImage: "url('/images/space.jpg')",
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          padding: '2rem'
+        }}
+      >
+  
+        {/* Centered Heading */}
+        <h3 className="text-2xl font-bold text-white mb-6 text-center">See Maibel.ai in Action</h3>
 
-          {/* Video Grid with Virtual Phone */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            {/* AI Coach Video */}
-            <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
-              <video
-                ref={aiCoachVideoRef}
-                className="w-full h-full object-cover translate-y-[5px]"
-                controls
-                loop
-                autoPlay
-                muted
-              >
-                <source src="/videos/coach_chat.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              {/* Notch (Fake Phone Look) */}
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-3 bg-gray-800 rounded-full"></div>
-            </div>
+        {/* Video Grid with Virtual Phone */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10">
+          {/* AI Coach Video */}
+          <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
+            <video
+              ref={aiCoachVideoRef}
+              className="w-full h-full object-cover translate-y-[5px]"
+              controls
+              loop
+              autoPlay
+              muted
+            >
+              <source src="/videos/coach_chat.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Notch (Fake Phone Look) */}
+            <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-3 bg-gray-800 rounded-full"></div>
+          </div>
 
-            {/* Story Mode Video */}
-            <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
-              <video
-                ref={storyModeVideoRef}
-                className="w-full h-full object-cover translate-y-[5px]"
-                controls
-                loop
-                autoPlay
-                muted
-              >
-                <source src="/videos/stories.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              {/* Notch (Fake Phone Look) */}
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-3 bg-gray-800 rounded-full"></div>
-            </div>
+          {/* Story Mode Video */}
+          <div className="relative w-44 md:w-64 aspect-[9.18/18] bg-black rounded-[2rem] shadow-lg border-4 border-gray-900 overflow-hidden">
+            <video
+              ref={storyModeVideoRef}
+              className="w-full h-full object-cover translate-y-[5px]"
+              controls
+              loop
+              autoPlay
+              muted
+            >
+              <source src="/videos/stories.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Notch (Fake Phone Look) */}
+            <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-3 bg-gray-800 rounded-full"></div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Features Section */}
       <section id="features" className="py-20 bg-[#f6f2ea]">
