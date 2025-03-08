@@ -22,12 +22,12 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className={`text-[#382a40] hover:text-[#512260] ${isActive('/')}`}>
+            {/* <Link href="/" className={`text-[#382a40] hover:text-[#512260] ${isActive('/')}`}>
               About
             </Link>
             <Link href="/contact" className={`text-[#382a40] hover:text-[#512260] ${isActive('/contact')}`}>
               Contact
-            </Link>
+            </Link> */}
             {/* <Link href="/blog" className={`text-[#382a40] hover:text-[#512260] ${isActive('/blog')}`}>
               Blog
             </Link> */}
