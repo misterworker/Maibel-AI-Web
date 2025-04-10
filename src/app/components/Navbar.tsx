@@ -35,8 +35,11 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div>
-            <a href="/refer" className="px-4 py-2 bg-[#512260] text-white rounded-lg hover:bg-[#c5aded]">
+            {/* <a href="/refer" className="px-4 py-2 bg-[#512260] text-white rounded-lg hover:bg-[#c5aded]">
               Get Started
+            </a> */}
+            <a href="https://www.yacpb.sg/home?project_id=80837647-8dbb-4762-b4ab-65a3ff3f5522" className="px-4 py-2 bg-[#512260] text-white rounded-lg hover:bg-[#c5aded]">
+              Vote for Maibel
             </a>
           </div>
         </div>
