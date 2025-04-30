@@ -39,10 +39,10 @@ export default function Home() {
           Join the Waitlist
         </a> */}
         <a
-          href="https://www.yacpb.sg/home?project_id=80837647-8dbb-4762-b4ab-65a3ff3f5522"
+          href="https://app.youform.com/forms/z5gnmor9"
           className="mt-6 inline-block bg-[#512260] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#382a40] shadow-md"
         >
-          Cast Your Vote
+          Sign up for Beta MVP
         </a>
       </header>
 
